@@ -1,0 +1,21 @@
+PODS:
+  - Alamofire (4.5.1)
+  - HandyJSON (1.8.0)
+  - Kingfisher (4.2.0)
+  - SlideMenuControllerSwift (3.0.2)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.5)
+  - HandyJSON (~> 1.8.0)
+  - Kingfisher (~> 4.0)
+  - SlideMenuControllerSwift (~> 3)
+
+SPEC CHECKSUMS:
+  Alamofire: 2d95912bf4c34f164fdfc335872e8c312acaea4a
+  HandyJSON: edaaa3278bf4c4c96d6f7382b80d6b91c88d3bf5
+  Kingfisher: 9ee7e788d8ba07c3f21ce0d43f33cec310a4f781
+  SlideMenuControllerSwift: 16001e1fd9963fd089fa6c91dbe18d4c148f0ce9
+
+PODFILE CHECKSUM: 2196faaf1129666956df0b11af7bbcf7ccc9c673
+
+COCOAPODS: 1.2.1

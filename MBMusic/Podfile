@@ -1,0 +1,32 @@
+# Import CocoaPods sources
+source 'https://github.com/CocoaPods/Specs.git'
+
+# Uncomment the next line to define a global platform for your project
+platform :ios, ‘9.0’
+
+# Uncomment the next line if you're using Swift or would like to use dynamic frameworks
+use_frameworks!
+
+target ‘MBMusic' do
+
+# Pods for MBMusic
+
+    pod 'SlideMenuControllerSwift', '~> 3’
+
+    pod 'HandyJSON', '~> 1.8.0’
+
+    pod 'Alamofire', '~> 4.5’
+
+    pod 'Kingfisher', '~> 4.0'
+
+end
+
+# 由于目前不是所有第三方库都支持Swift 4，所以在Podfile文件的最下方加入如下代码，指定pod库的Swift版本为3.2(这样会使得所有的第三方pod库的Swift版本都为3.2)
+
+post_install do |installer|
+  installer.pods_project.targets.each do |target|
+    target.build_configurations.each do |config|
+      config.build_settings['SWIFT_VERSION'] = '3.2'
+    end
+  end
+end
